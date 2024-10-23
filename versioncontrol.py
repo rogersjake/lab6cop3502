@@ -6,6 +6,12 @@ def encode_password(password):
         encoded += str((int(char) + 3) % 10)	# Shift each digit of password upwards by 3 (0-9)
     return encoded
 
+def decode_password(password):
+    decoded = ''
+    for char in password:
+        decoded += str((int(char)  -3) % 10)    # Shift each digit of password downwards by 3
+    return decoded
+
 def main():
     original_password = ''
     encoded_password = ''
