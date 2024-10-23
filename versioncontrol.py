@@ -17,10 +17,10 @@ def main():
     encoded_password = ''
 
     while True:
-        print("Menu\n-------------")
+        print("\nMenu\n-------------")
         print("1. Encode")
         print("2. Decode")
-        print("3. Quit")
+        print("3. Quit\n")
         option = input("Please enter an option: ")
 
         if option == '1':
